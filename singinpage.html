@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IMDb / Amazon — Sign in (responsive demo)</title>
+  <link rel="stylesheet" href="./assets/css/singinpage/main.css">
+  
+</head>
+<body>
+  <div class="page">
+    <main class="card" role="main" aria-labelledby="signin-title">
+      <div class="logo" aria-hidden="true">
+        <!-- simple SVG imitation of IMDb | amazon -->
+        <svg viewBox="0 0 220 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g font-family="Arial, Helvetica, sans-serif" font-weight="700">
+            <text x="0" y="26" font-size="20" fill="#111">IMDb</text>
+            <text x="50" y="26" font-size="20" fill="#111">|</text>
+            <text x="68" y="26" font-size="20" fill="#111">amazon</text>
+            <path d="M160 30c7-3 12-7 18-15" stroke="#111" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+
+      <h1 id="signin-title">Sign in to IMDb using your Amazon account</h1>
+
+      <form action="#" method="post" onsubmit="return false;">
+        <div class="field">
+          <label for="email">Enter mobile number or email</label>
+          <input id="email" name="email" type="text" inputmode="email" autocomplete="username" placeholder="you@example.com or +1 555 555 5555">
+        </div>
+
+        <div class="field">
+          <button type="submit" class="btn">Continue</button>
+        </div>
+
+        <p class="small-text">By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+
+        <p class="small-text" style="margin-top:10px"><a href="#">Need help?</a></p>
+      </form>
+
+      <div class="create">
+        <button type="button"></button>
+      </div>
+
+      <div class="footer">
+        <p>© 1996–2025, Amazon.com, Inc. or its affiliates</p>
+      </div>
+
+    </main>
+
+    <!-- SECOND SECTION -->
+    <section style="display:flex;flex-wrap:wrap;gap:40px;justify-content:center;margin-top:60px;max-width:1100px;width:100%;">
+      <div style="flex:1 1 380px;max-width:420px;">
+        <h2 style="font-size:24px;margin:0 0 20px 0;display:flex;align-items:center;gap:6px;">🔐 Sign in</h2>
+
+        <button  style="width:100%;padding:14px 10px;background:#ffd32a;border-radius:999px;border:0;font-weight:600; cursor: pointer;"><a href="./register.html">
+            Create your Amazon acount
+        </a></button>
+
+        <div style="text-align:center;margin:16px 0;color:#999;">───────── or ─────────</div>
+
+        <button style="width:100%;padding:14px 10px;background:#e5e7eb;border-radius:999px;border:0;font-weight:600;"><a href="./singin.html">Sign in </a></button>
+
+        <p style="font-size:13px;color:#666;margin-top:16px;">By signing in, you agree to IMDb's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+      </div>
+
+      <div style="flex:1 1 380px;max-width:420px;">
+        <h2 style="font-size:22px;margin:0 0 14px 0;">It's so much better when you sign in</h2>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;font-size:15px;">
+          <li><b>Personalized recommendations</b><br><span style="color:#666;font-size:14px;">Titles tailored to your taste.</span></li>
+          <li><b>Your Watchlist</b><br><span style="color:#666;font-size:14px;">Track your future views and get reminders.</span></li>
+          <li><b>Your ratings</b><br><span style="color:#666;font-size:14px;">Rate and remember what you watch.</span></li>
+          <li><b>Contribute to IMDb</b><br><span style="color:#666;font-size:14px;">Add data that helps millions of fans.</span></li>
+          <li><b>Preferred services</b><br><span style="color:#666;font-size:14px;">Edit your preferred streaming services.</span></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>

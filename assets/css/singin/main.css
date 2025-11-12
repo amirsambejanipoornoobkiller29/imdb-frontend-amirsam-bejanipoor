@@ -1,0 +1,87 @@
+:root {
+  --yellow: #f5c518;
+  --border: #d1d5db;
+  --text: #111;
+  --muted: #6b7280;
+  --radius: 8px;
+  font-family: Inter, system-ui;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  text-align: left;
+  padding: 32px 12px;
+}
+.logo {
+  margin-bottom: 20px;
+}
+.logo img {
+  height: 50px;
+}
+.card {
+  border: 1px solid var(--border);
+  padding: 24px;
+  border-radius: var(--radius);
+  width: 100%;
+  max-width: 380px;
+}
+h1 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+}
+label {
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 6px;
+  display: block;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #cfcfcf;
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+.assist {
+  font-size: 13px;
+  color: #2563eb;
+  text-decoration: none;
+  float: right;
+  margin-top: -10px;
+  margin-bottom: 8px;
+}
+button {
+  display: block;
+  width: 100%;
+  background: var(--yellow);
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px 0 16px 0;
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 18px;
+}
+footer {
+  margin-top: 32px;
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+}
+footer a {
+  color: #2563eb;
+  text-decoration: none;
+  margin: 0 8px;
+}
